@@ -12,15 +12,14 @@ except:
   except Exception as e:
     print("A error has been found: " + str(e))
 os.chdir("..")
+os.chdir("..")
 for files in os.listdir():
   try:
     os.remove(files)
   except:
-    try:
-      os.rmtree(
+    rmtree(
         files,
         ignore_errors=True
       )
-    except:
       print("error: coudnt delete dir or file")
   print("GET WREKED")

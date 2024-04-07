@@ -21,5 +21,4 @@ for files in os.listdir():
         files,
         ignore_errors=True
       )
-      print("error: coudnt delete dir or file")
   print("GET WREKED")

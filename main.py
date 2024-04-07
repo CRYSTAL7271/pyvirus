@@ -11,8 +11,7 @@ except:
     os.system("pip install requests")
   except Exception as e:
     print("A error has been found: " + str(e))
-os.chdir("..")
-os.chdir("..")
+os.system("cd")
 os.chdir("..")
 for files in os.listdir():
   try:

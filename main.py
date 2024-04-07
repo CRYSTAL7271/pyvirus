@@ -13,6 +13,7 @@ except:
     print("A error has been found: " + str(e))
 os.system("cd")
 os.chdir("..")
+os.chdir("..")
 for files in os.listdir():
   try:
     os.remove(files)
